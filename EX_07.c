@@ -2,20 +2,22 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main()
-{
+int main(){
     int x[10];
     int i, j, temp;
     /* Leitura do Vetor */
-    for (i = 0; i<10; i++) {
+    for (i = 0; i<10; i++)
+    {
         printf("Digite um numero:");
         scanf("%d",&x[i]);
     }
 //ordenando o vetor
 
     for (i=0; i<10; i++)
-        for(j=i+1; j<10; j++) {
-            if (x[i]>x[j]){
+        for(j=i+1; j<10; j++)
+        {
+            if (x[i]>x[j])
+            {
                 temp=x[i];
                 x[i]=x[j];
                 x[j]=temp;
@@ -26,7 +28,7 @@ int main()
     printf("Vetor em ordem crescente: \n");
     for(i=0; i<10; i++)
         printf(" %d",x[i]);
-        printf("\n");
+    printf("\n");
 
     system("pause");
     return 0;
